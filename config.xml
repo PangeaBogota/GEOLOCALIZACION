@@ -52,7 +52,6 @@
 
     <!-- Core plugins -->
  
-<plugin name="Geolocation" value="org.apache.cordova.GeoBroker" />
     <!-- Third party plugins -->
     <!-- A list of available plugins are available at https://build.phonegap.com/plugins -->
     <!--
