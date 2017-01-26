@@ -10,6 +10,8 @@ app_angular.controller("actividadesController",['Conexion','$scope', '$routePara
 	        $scope.position = position;
 	        $scope.url='http://www.openstreetmap.org/?mlat='+position.coords.latitude+'&mlon='+position.coords.longitude+'#map=17/'+position.coords.latitude+'/'+position.coords.longitude+'';
 	      });
+	    },function(error){
+	    	$scope.url='error'
 	    });
 	  }
 	  else 
