@@ -12,6 +12,10 @@ app_angular.controller("actividadesController",['Conexion','$scope', '$routePara
 	      });
 	    });
 	  }
+	  else 
+	  {
+	  	 $scope.url='error no soportado la localizacion'
+	  }
 	$scope.Search;
 	$scope.registro=[];
 	$scope.registro.rowid=1000;
