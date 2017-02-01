@@ -920,10 +920,11 @@ app_angular.controller('sessionController',['bootbox','Conexion','$scope','$loca
 
 app_angular.controller('appController',['Conexion','$scope','$location','$http', '$routeParams', 'Factory' ,function (Conexion, $scope, $location, $http, $routeParams, Factory) {
     
-    if (window.localStorage.getItem("CUR_USER") == null || window.localStorage.getItem("CUR_USER")==undefined) {
-        location.href='login.html';
-        return;
-    }
+    //if (window.localStorage.getItem("CUR_USER") == null || window.localStorage.getItem("CUR_USER")==undefined) {
+    //
+    //    location.href='login.html';
+    //    return;
+    //}
     
     if ($routeParams.url == undefined) {
    
