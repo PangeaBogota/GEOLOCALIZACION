@@ -4,7 +4,8 @@
 var app_angular= angular.module('PedidosOnline');
 
 app_angular.controller("actividadesController",['Conexion','$scope', '$routeParams',function (Conexion,$scope,$routeParams) {
-	if (navigator.geolocation) {
+	try {
+     if (navigator.geolocation) {
 	    navigator.geolocation.getCurrentPosition(function(position){
 	      $scope.$apply(function(){
 	        $scope.position = position;
@@ -18,6 +19,11 @@ app_angular.controller("actividadesController",['Conexion','$scope', '$routePara
 	  {
 	  	 $scope.url='error no soportado la localizacion'
 	  }
+	}
+	catch(err) {
+	    $scope.url = err.message;
+	}
+	
 	$scope.Search;
 	$scope.registro=[];
 	$scope.registro.rowid=1000;
