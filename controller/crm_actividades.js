@@ -9,7 +9,8 @@ app_angular.controller("actividadesController",['Conexion','$scope', '$routePara
 	    navigator.geolocation.getCurrentPosition(function(position){
 	      $scope.$apply(function(){
 	        $scope.position = position;
-	        $scope.url='http://www.openstreetmap.org/?mlat='+position.coords.latitude+'&mlon='+position.coords.longitude+'#map=17/'+position.coords.latitude+'/'+position.coords.longitude+'';
+	        //$scope.url='http://www.openstreetmap.org/?mlat='+position.coords.latitude+'&mlon='+position.coords.longitude+'#map=17/'+position.coords.latitude+'/'+position.coords.longitude+'';
+	        $scope.url='asdasdas';
 	      });
 	    },function(error){
 	    	$scope.url=error.message
